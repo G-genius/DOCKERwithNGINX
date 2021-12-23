@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Thu 2021-12-23 13:49:58 MSK; 31s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 18023 (dockerd)
+      Tasks: 7
+     Memory: 28.6M
+     CGroup: /system.slice/docker.service
+             └─18023 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+дек 23 13:49:58 vitalii-VirtualBox dockerd[18023]: time="2021-12-23T13:49:58.390752336+03:00" level=warning msg="Your kernel does not support CPU realtime scheduler"
+дек 23 13:49:58 vitalii-VirtualBox dockerd[18023]: time="2021-12-23T13:49:58.390973566+03:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+дек 23 13:49:58 vitalii-VirtualBox dockerd[18023]: time="2021-12-23T13:49:58.391059317+03:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+дек 23 13:49:58 vitalii-VirtualBox dockerd[18023]: time="2021-12-23T13:49:58.391284815+03:00" level=info msg="Loading containers: start."
+дек 23 13:49:58 vitalii-VirtualBox dockerd[18023]: time="2021-12-23T13:49:58.534000294+03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+дек 23 13:49:58 vitalii-VirtualBox dockerd[18023]: time="2021-12-23T13:49:58.636620883+03:00" level=info msg="Loading containers: done."
+дек 23 13:49:58 vitalii-VirtualBox dockerd[18023]: time="2021-12-23T13:49:58.700727179+03:00" level=info msg="Docker daemon" commit=459d0df graphdriver(s)=overlay2 version=20.10.12
+дек 23 13:49:58 vitalii-VirtualBox dockerd[18023]: time="2021-12-23T13:49:58.700808689+03:00" level=info msg="Daemon has completed initialization"
+дек 23 13:49:58 vitalii-VirtualBox systemd[1]: Started Docker Application Container Engine.
+дек 23 13:49:58 vitalii-VirtualBox dockerd[18023]: time="2021-12-23T13:49:58.753863830+03:00" level=info msg="API listen on /run/docker.sock"
